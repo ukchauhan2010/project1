@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="gr()">Green</button>
+    <button onclick="red()">Red</button>
+    <div id="box" class="box"></div>
+</body>
+</html>
+<style>
+   
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        }
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+</style>
+<script>
+   let box1=document.getElementById("box");
+   
+   function gr(){
+    box1.classList.remove("red");
+    box1.classList.add("green");
+  }
+
+  function red(){
+    box1.classList.remove("green");
+    box1.classList.add("red");
+  }
+
+</script>
